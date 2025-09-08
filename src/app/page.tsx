@@ -7,9 +7,9 @@ import { motion, useAnimation, Variants } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
+import { ReactNode } from "react";
 interface Feature {
-  icon: JSX.Element;
+  icon: ReactNode;
   title: string;
   description: string;
 }
