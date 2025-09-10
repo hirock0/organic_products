@@ -1,1 +1,4 @@
 @import "tailwindcss";
+.font-bangla {
+  font-family: 'Hind Siliguri', sans-serif;
+}
