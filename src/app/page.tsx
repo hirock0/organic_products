@@ -50,64 +50,65 @@ const OrganicLandingPage: React.FC = () => {
   const features: Feature[] = [
     {
       icon: <Leaf className="w-8 h-8" />,
-      title: "100% Organic",
-      description: "Certified organic products grown without harmful pesticides or chemicals",
+      title: "১০০% অর্গানিক",
+      description: "ক্ষতিকর কীটনাশক বা রাসায়নিক ছাড়া উৎপাদিত প্রত্যয়িত অর্গানিক পণ্য",
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Quality Guaranteed",
-      description: "Rigorous testing and quality control for every product we sell",
+      title: "গুণগত মানের নিশ্চয়তা",
+      description: "আমাদের প্রতিটি পণ্যের জন্য কঠোর পরীক্ষা ও মান নিয়ন্ত্রণ",
     },
     {
       icon: <Truck className="w-8 h-8" />,
-      title: "Fresh Delivery",
-      description: "Farm-to-door delivery ensuring maximum freshness and nutrition",
+      title: "তাজা ডেলিভারি",
+      description: "ফার্ম থেকে সরাসরি আপনার দোরগোড়ায় সর্বাধিক সতেজ ও পুষ্টিকর ডেলিভারি",
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "Health First",
-      description: "Supporting your wellness journey with nature's finest ingredients",
+      title: "স্বাস্থ্য সবার আগে",
+      description: "প্রকৃতির শ্রেষ্ঠ উপাদান দিয়ে আপনার সুস্থতার যাত্রায় সহায়তা",
     },
   ];
 
   const testimonials: Testimonial[] = [
     {
-      name: "Sarah Johnson",
+      name: "সারা জনসন",
       rating: 5,
-      text: "The quality is outstanding! My family loves the fresh taste and I feel good knowing we're eating clean.",
+      text: "অসাধারণ মান! আমার পরিবার সতেজ স্বাদ পছন্দ করে এবং আমি নিশ্চিত থাকি আমরা স্বাস্থ্যকর খাবার খাচ্ছি।",
     },
     {
-      name: "Mike Chen",
+      name: "মাইক চেন",
       rating: 5,
-      text: "Fast delivery and amazing customer service. These organic products have transformed our meals.",
+      text: "দ্রুত ডেলিভারি এবং চমৎকার কাস্টমার সার্ভিস। এই অর্গানিক পণ্যগুলো আমাদের খাবারের ধরন পাল্টে দিয়েছে।",
     },
     {
-      name: "Emma Davis",
+      name: "এমা ডেভিস",
       rating: 5,
-      text: "Finally found a reliable source for truly organic products. The difference in taste is incredible!",
+      text: "অবশেষে সত্যিকারের অর্গানিক পণ্যের নির্ভরযোগ্য উৎস পেলাম। স্বাদের পার্থক্য অবিশ্বাস্য!",
     },
   ];
 
   const products: Product[] = [
     {
-      name: "Organic Vegetables",
+      name: "অর্গানিক সবজি",
       image: "🥕",
-      price: "$12.99",
-      description: "Fresh seasonal vegetables harvested daily",
+      price: "৳১২.৯৯",
+      description: "প্রতিদিন সংগ্রহ করা তাজা মৌসুমি সবজি",
     },
     {
-      name: "Organic Fruits",
+      name: "অর্গানিক ফল",
       image: "🍎",
-      price: "$15.99",
-      description: "Sweet, juicy fruits packed with natural goodness",
+      price: "৳১৫.৯৯",
+      description: "মিষ্টি, রসালো ফল প্রাকৃতিক পুষ্টিতে ভরপুর",
     },
     {
-      name: "Organic Grains",
+      name: "অর্গানিক শস্য",
       image: "🌾",
-      price: "$8.99",
-      description: "Wholesome grains for healthy, filling meals",
+      price: "৳৮.৯৯",
+      description: "স্বাস্থ্যকর ও পুষ্টিকর খাবারের জন্য উৎকৃষ্ট শস্য",
     },
   ];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-green-50 font-sans">
@@ -131,9 +132,8 @@ const OrganicLandingPage: React.FC = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          scrollY > 50 ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'
-        }`}
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrollY > 50 ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'
+          }`}
         aria-label="Main navigation"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -153,23 +153,23 @@ const OrganicLandingPage: React.FC = () => {
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-10">
               <a href="#home" className="text-gray-800 hover:text-green-600 transition-colors font-medium">
-                Home
+                হোম
               </a>
               <a href="#products" className="text-gray-800 hover:text-green-600 transition-colors font-medium">
-                Products
+                পণ্যসমূহ
               </a>
               <a href="#about" className="text-gray-800 hover:text-green-600 transition-colors font-medium">
-                About
+                আমাদের সম্পর্কে
               </a>
               <a href="#contact" className="text-gray-800 hover:text-green-600 transition-colors font-medium">
-                Contact
+                যোগাযোগ
               </a>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-2 rounded-full font-semibold"
               >
-                Shop Now
+                এখনই কিনুন
               </motion.button>
             </div>
 
@@ -194,23 +194,23 @@ const OrganicLandingPage: React.FC = () => {
           >
             <div className="px-4 py-6 space-y-4">
               <a href="#home" className="block text-gray-800 hover:text-green-600 font-medium">
-                Home
+                হোম
               </a>
               <a href="#products" className="block text-gray-800 hover:text-green-600 font-medium">
-                Products
+                পণ্যসমূহ
               </a>
               <a href="#about" className="block text-gray-800 hover:text-green-600 font-medium">
-                About
+                আমাদের সম্পর্কে
               </a>
               <a href="#contact" className="block text-gray-800 hover:text-green-600 font-medium">
-                Contact
+                যোগাযোগ
               </a>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-3 rounded-full font-semibold"
               >
-                Shop Now
+                এখনই কিনুন
               </motion.button>
             </div>
           </motion.div>
@@ -232,17 +232,19 @@ const OrganicLandingPage: React.FC = () => {
               <div className="space-y-5">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">
                   <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
-                    Pure Organic
+                    খাঁটি অর্গানিক
                   </span>
                   <br />
-                  Products for
+                  পণ্যসমূহ
                   <br />
-                  Sustainable Living
+                  টেকসই জীবনের জন্য
                 </h1>
                 <p className="text-lg text-gray-600 max-w-lg leading-relaxed">
-                  Discover premium organic products sourced directly from sustainable farms. Nourish your body and support eco-conscious practices with every purchase.
+                  টেকসই খামার থেকে সরাসরি সংগ্রহ করা প্রিমিয়াম অর্গানিক পণ্য আবিষ্কার করুন।
+                  প্রতিটি ক্রয়ের মাধ্যমে আপনার শরীরকে পুষ্ট করুন এবং পরিবেশবান্ধব কার্যক্রমকে সমর্থন করুন।
                 </p>
               </div>
+
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.button
@@ -250,7 +252,7 @@ const OrganicLandingPage: React.FC = () => {
                   whileTap={{ scale: 0.95 }}
                   className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg flex items-center justify-center gap-2"
                 >
-                  Shop Collection
+                  সংগ্রহ দেখুন
                   <ArrowRight className="w-5 h-5" />
                 </motion.button>
                 <motion.button
@@ -258,22 +260,22 @@ const OrganicLandingPage: React.FC = () => {
                   whileTap={{ scale: 0.95 }}
                   className="border-2 border-green-500 text-green-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-50"
                 >
-                  Learn More
+                  আরও জানুন
                 </motion.button>
               </div>
 
               <div className="flex items-center gap-10">
                 <motion.div variants={itemVariants} className="text-center">
                   <div className="text-3xl font-bold text-green-600">10K+</div>
-                  <div className="text-gray-600 text-sm">Happy Customers</div>
+                  <div className="text-gray-600 text-sm">সন্তুষ্ট গ্রাহক</div>
                 </motion.div>
                 <motion.div variants={itemVariants} className="text-center">
                   <div className="text-3xl font-bold text-green-600">100%</div>
-                  <div className="text-gray-600 text-sm">Organic Certified</div>
+                  <div className="text-gray-600 text-sm">অর্গানিক সনদপ্রাপ্ত</div>
                 </motion.div>
                 <motion.div variants={itemVariants} className="text-center">
-                  <div className="text-3xl font-bold text-green-600">24/7</div>
-                  <div className="text-gray-600 text-sm">Fresh Guarantee</div>
+                  <div className="text-3xl font-bold text-green-600">২৪/৭</div>
+                  <div className="text-gray-600 text-sm">তাজা থাকার নিশ্চয়তা</div>
                 </motion.div>
               </div>
             </motion.div>
@@ -290,8 +292,8 @@ const OrganicLandingPage: React.FC = () => {
                 <div className="text-center space-y-6">
                   <div className="text-9xl">🥬</div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-gray-900">Farm Fresh Daily</h3>
-                    <p className="text-gray-600">Harvested with care, delivered with love</p>
+                    <h3 className="text-2xl font-bold text-gray-900">প্রতিদিন খামারের তাজা</h3>
+                    <p className="text-gray-600">ভালোবাসা দিয়ে সংগ্রহিত, যত্নের সাথে পৌঁছে দেওয়া</p>
                   </div>
                   <div className="flex justify-center space-x-1">
                     {[1, 2, 3, 4, 5].map((star) => (
@@ -320,9 +322,9 @@ const OrganicLandingPage: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl font-extrabold text-gray-900">Why Choose PureHarvest?</h2>
+            <h2 className="text-4xl font-extrabold text-gray-900">কেন PureHarvest বেছে নেবেন?</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              We are committed to delivering premium organic products while championing sustainable farming practices.
+              আমরা প্রিমিয়াম অর্গানিক পণ্য সরবরাহে প্রতিশ্রুতিবদ্ধ এবং একই সঙ্গে টেকসই কৃষি কার্যক্রমকে সমর্থন করি।
             </p>
           </div>
 
@@ -356,8 +358,8 @@ const OrganicLandingPage: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl font-extrabold text-gray-900">Featured Products</h2>
-            <p className="text-lg text-gray-600">Handpicked selections from our trusted organic farm partners</p>
+            <h2 className="text-4xl font-extrabold text-gray-900">বৈশিষ্ট্যযুক্ত পণ্যসমূহ</h2>
+            <p className="text-lg text-gray-600">আমাদের বিশ্বাসযোগ্য অর্গানিক খামার অংশীদারদের হাতে নির্বাচিত পণ্যসমূহ</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -399,9 +401,9 @@ const OrganicLandingPage: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl font-extrabold text-gray-900">What Our Customers Say</h2>
+            <h2 className="text-4xl font-extrabold text-gray-900">আমাদের গ্রাহকরা কী বলেন</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Join thousands of satisfied customers who trust PureHarvest for premium organic products
+              হাজার হাজার সন্তুষ্ট গ্রাহকের সঙ্গে যোগ দিন যারা প্রিমিয়াম অর্গানিক পণ্যের জন্য PureHarvest-কে বিশ্বাস করেন
             </p>
           </div>
 
@@ -456,10 +458,10 @@ const OrganicLandingPage: React.FC = () => {
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
           <h2 className="text-4xl lg:text-5xl font-extrabold text-white">
-            Begin Your Organic Journey Today
+            আজই শুরু করুন আপনার অর্গানিক যাত্রা
           </h2>
           <p className="text-lg text-green-100 max-w-2xl mx-auto leading-relaxed">
-            Join our community of health-conscious customers and experience the transformative power of truly organic products.
+            আমাদের স্বাস্থ্যসচেতন গ্রাহক সম্প্রদায়ের সঙ্গে যোগ দিন এবং সত্যিই অর্গানিক পণ্যের রূপান্তরমূলক শক্তি অনুভব করুন।
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.button
@@ -468,17 +470,18 @@ const OrganicLandingPage: React.FC = () => {
               className="bg-white text-green-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 flex items-center justify-center gap-2"
             >
               <CheckCircle className="w-5 h-5" />
-              Start Shopping
+              কেনাকাটা শুরু করুন
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-green-600"
             >
-              Get 20% Off Your First Order
+              আপনার প্রথম অর্ডারে ২০% ছাড় পান
             </motion.button>
           </div>
         </div>
+
       </motion.section>
 
       {/* Footer */}
@@ -502,69 +505,70 @@ const OrganicLandingPage: React.FC = () => {
                 <span className="text-2xl font-bold">PureHarvest</span>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Delivering premium organic products for a healthier lifestyle and a sustainable future.
+                সুস্থ জীবনধারা এবং টেকসই ভবিষ্যতের জন্য প্রিমিয়াম অর্গানিক পণ্য সরবরাহ করছে।
               </p>
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold">Products</h4>
+              <h4 className="text-lg font-semibold">পণ্যসমূহ</h4>
               <div className="space-y-2">
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
-                  Vegetables
+                  শাকসবজি
                 </a>
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
-                  Fruits
+                  ফলমূল
                 </a>
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
-                  Grains
+                  শস্য
                 </a>
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
-                  Herbs
+                  হার্বস
                 </a>
               </div>
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold">Company</h4>
+              <h4 className="text-lg font-semibold">কোম্পানি</h4>
               <div className="space-y-2">
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
-                  About Us
+                  আমাদের সম্পর্কে
                 </a>
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
-                  Our Farms
+                  আমাদের খামার
                 </a>
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
-                  Certifications
+                  সনদপত্র
                 </a>
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
-                  Sustainability
+                  টেকসইতা
                 </a>
               </div>
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold">Support</h4>
+              <h4 className="text-lg font-semibold">সাপোর্ট</h4>
               <div className="space-y-2">
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
-                  Help Center
+                  হেল্প সেন্টার
                 </a>
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
-                  Shipping Info
+                  শিপিং তথ্য
                 </a>
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
-                  Returns
+                  রিটার্ন
                 </a>
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
-                  Contact
+                  যোগাযোগ
                 </a>
               </div>
             </div>
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2025 PureHarvest. All rights reserved. Made with 💚 for a healthier world.</p>
+            <p>&copy; 2025 PureHarvest। সর্বস্বত্ব সংরক্ষিত। 💚 সহ একটি সুস্থ বিশ্বের জন্য তৈরি।</p>
           </div>
         </div>
+
       </motion.footer>
     </div>
   );
