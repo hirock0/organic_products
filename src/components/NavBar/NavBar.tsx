@@ -2,16 +2,12 @@
 import { navData } from '@/data/navData'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { Leaf, Star, Truck, Shield, Heart, ArrowRight, Menu, X, CheckCircle } from 'lucide-react';
+import {  Menu, X, } from 'lucide-react';
 const NavBar = () => {
-
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-
-
     return (
         <nav
-
-            className={` sticky top-0 bg-white border-b-1 border-b-slate-300  w-full  transition-all `}
+            className={` sticky top-0 z-50 bg-white border-b-1 border-b-slate-300  w-full  transition-all `}
             aria-label="Main navigation"
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
