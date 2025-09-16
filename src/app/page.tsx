@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { ReactNode } from "react";
+import Image from 'next/image';
 interface Feature {
   icon: ReactNode;
   title: string;
@@ -174,7 +175,7 @@ const OrganicLandingPage: React.FC = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrollY > 50 ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'
+        className={`fixed border-b-1 border-b-slate-300 top-0 w-full z-50 transition-all duration-300 ${scrollY > 50 ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'
           }`}
         aria-label="Main navigation"
       >
@@ -183,9 +184,10 @@ const OrganicLandingPage: React.FC = () => {
             <div className="flex items-center space-x-3">
               <motion.div
                 whileHover={{ scale: 1.1 }}
-                className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-700 rounded-full flex items-center justify-center"
+                className="w-20 h-20 rounded-full flex items-center justify-center"
               >
-                <Leaf className="w-7 h-7 text-white" />
+                <Image src={"https://res.cloudinary.com/dqpyp8ii2/image/upload/v1758035793/Nature_Life_Logo-01-01_cl15ho.png"} alt='logo' width={500} height={500}/>
+                {/* <Leaf className="w-7 h-7 text-white" /> */}
               </motion.div>
               <span className="text-2xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
                 PureHarvest
@@ -266,7 +268,7 @@ const OrganicLandingPage: React.FC = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
-        className="pt-24 pb-20"
+        className="pt-34 pb-20"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
