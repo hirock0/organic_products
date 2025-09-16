@@ -9,7 +9,7 @@ const Features = () => {
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center space-y-4 mb-16">
-                    <h2 className="text-4xl font-extrabold text-gray-900">কেন PureHarvest বেছে নেবেন?</h2>
+                    <h2 className="text-4xl font-extrabold text-gray-900">কেন "ন্যাচারাল লাইফ" বেছে নেবেন?</h2>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
                         আমরা প্রিমিয়াম অর্গানিক পণ্য সরবরাহে প্রতিশ্রুতিবদ্ধ এবং একই সঙ্গে টেকসই কৃষি কার্যক্রমকে সমর্থন করি।
                     </p>

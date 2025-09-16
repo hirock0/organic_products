@@ -7,8 +7,8 @@ const ProductCard = ({ product }: any) => {
                 className="bg-white w-full overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
             >
                 <div className="p-8 text-center space-y-4">
-                    <div className="">
-                        <Image priority src={product?.image} alt={product?.name} width={500} height={500}/>
+                    <div className=" h-72 max-sm:h-80 ">
+                        <Image priority src={product?.image} alt={product?.name} width={500} height={500} className=" w-full h-full object-cover"/>
                     </div>
                     <div className="space-y-3">
                         <h3 className="text-2xl font-semibold text-gray-900">{product.name}</h3>
