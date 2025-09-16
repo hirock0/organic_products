@@ -11,15 +11,47 @@ const Footer = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-4 gap-8">
                         <div className="space-y-4">
-                            <div className="flex items-center space-x-3">
+
+
+
+
+
+
+
+                            <div className=" flex items-center">
                                 <div
 
-                                    className="w-20 h-20 rounded-full flex items-center justify-center"
+                                    className="w-20 h-20 "
                                 >
                                     <Image src={"https://res.cloudinary.com/dqpyp8ii2/image/upload/v1758035793/Nature_Life_Logo-01-01_cl15ho.png"} alt='logo' width={500} height={500} />
+
                                 </div>
-                                <span className="text-2xl font-bold">ন্যাচারাল লাইফ</span>
+
+                                <h1 className="text-2xl text-center font-bold text-[#43b51a]">
+                                    ন্যাচারাল লাইফ
+                                </h1>
                             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             <p className="text-gray-400 text-sm leading-relaxed">
                                 সুস্থ জীবনধারা এবং টেকসই ভবিষ্যতের জন্য প্রিমিয়াম অর্গানিক পণ্য সরবরাহ করছে।
                             </p>

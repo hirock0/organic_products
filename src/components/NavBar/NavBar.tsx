@@ -12,17 +12,19 @@ const NavBar = () => {
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-4">
-                    <div className="flex items-center space-x-3">
+                    <div className="flex items-center ">
                         <div
 
-                            className="w-20 h-20 rounded-full flex items-center justify-center"
+                            className="w-20 h-20 "
                         >
                             <Image src={"https://res.cloudinary.com/dqpyp8ii2/image/upload/v1758035793/Nature_Life_Logo-01-01_cl15ho.png"} alt='logo' width={500} height={500} />
                
                         </div>
-                        <span className="text-2xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+                        <div className="">
+                        <h1 className="text-2xl font-bold text-[#43b51a]">
                             ন্যাচারাল লাইফ
-                        </span>
+                        </h1>
+                        </div>
                     </div>
 
                     {/* Desktop Menu */}
@@ -73,7 +75,7 @@ const NavBar = () => {
 
                         <button
 
-                            className="w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-3 rounded-full font-semibold"
+                            className="w-full  bg-gradient-to-r from-[#43b51a] to-[#3a861f] text-white px-6 py-3 rounded-full font-semibold"
                         >
                             এখনই কিনুন
                         </button>

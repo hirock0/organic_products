@@ -13,10 +13,10 @@ const ProductCard = ({ product }: any) => {
                     <div className="space-y-3">
                         <h3 className="text-2xl font-semibold text-gray-900">{product.name}</h3>
                         <p className="text-gray-600 text-sm">{product.description}</p>
-                        <div className="text-2xl font-bold text-green-600">{product.price}</div>
+                        <div className="text-2xl font-bold text-[#43b51a]">{product.price}</div>
                     </div>
                     <button
-                        className="w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white py-3 rounded-full font-semibold"
+                        className="w-full bg-gradient-to-r from-[#43b51a] to-[#3a861f] text-white py-3 rounded-full font-semibold"
                     >
                         Add to Cart
                     </button>
