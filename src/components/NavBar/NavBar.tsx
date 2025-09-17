@@ -22,7 +22,7 @@ const NavBar = () => {
                         </div>
                         <div className="">
                         <h1 className="text-2xl font-bold text-[#43b51a]">
-                            ন্যাচারাল লাইফ
+                            ন্যাচার লাইফ
                         </h1>
                         </div>
                     </div>

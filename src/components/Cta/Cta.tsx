@@ -1,8 +1,8 @@
-import {  X, CheckCircle } from 'lucide-react';
+import { X, CheckCircle } from 'lucide-react';
 const Cta = () => {
   return (
     <div>
-              <section
+      <section
 
         className="py-24 bg-gradient-to-r from-[#43b51a] to-[#3a861f]"
       >
