@@ -2,9 +2,15 @@
 .font-bangla {
   font-family: 'Hind Siliguri', sans-serif;
 }
+button{
+  @apply hover:cursor-pointer
+}
 .theme_background{
   @apply bg-[#43b51a];
 }
 .theme_text{
   @apply text-[#43b51a];
+}
+.button_color{
+  @apply  bg-[#43b51a] hover:bg-[#2e9d05];
 }

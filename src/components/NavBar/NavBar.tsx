@@ -3,17 +3,24 @@ import Marquee from "react-fast-marquee";
 import { navData } from '@/data/navData'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import { Menu, X, } from 'lucide-react';
-
+import { Menu, X, PhoneCall, MailPlus } from 'lucide-react';
+import { FaWhatsapp } from "react-icons/fa6";
 const items = [
-    "🌱 ১০০% খাঁটি ও অর্গানিক পণ্যের নিশ্চয়তা",
-    "🥦 প্রকৃতির স্পর্শে বিশুদ্ধ অর্গানিক খাবার",
-    "🍯 রাসায়নিকমুক্ত, স্বাস্থ্যকর ও নিরাপদ পণ্য",
-    "🌾 খাঁটি ও অর্গানিক পণ্যে বিশ্বাসের প্রতিশ্রুতি",
-    "🛒 অর্ডার করুন ঘরে বসে, পান প্রকৃতির আসল স্বাদ",
-    "💚 আপনার পরিবারের জন্য নির্ভরযোগ্য অর্গানিক সমাধান",
-    "🎉 বিশেষ ছাড় চলছে – এখনই অর্ডার করুন!",
-    "🚚 বাংলাদেশের যেকোনো স্থানে দ্রুত ডেলিভারি",
+    {
+        icon: <PhoneCall className=" w-6 h-6" />,
+        title: "+8801700554293",
+        description: "অর্ডার করুন খাঁটি অর্গানিক পণ্য — এখনই কল করুন"
+    },
+    {
+        icon: <FaWhatsapp className=" w-6 h-6" />,
+        title: "+8801700554293",
+        description: "স্বাস্থ্যকর জীবনের জন্য আজই যোগাযোগ করুন"
+    },
+    {
+        icon: <MailPlus className=" w-6 h-6" />,
+        title: "hirockdutta0@gmail.com",
+        description: "রাসায়নিকমুক্ত অর্গানিক খাবার পেতে আমাদের সাথে থাকুন"
+    }
 ];
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -39,18 +46,30 @@ const NavBar = () => {
 
     return (
         <nav
-            className={` ${lastScrollY !== 0 && "fixed top-0 left-0"}  z-50 w-full bg-white border-b border-b-slate-300 transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"
+            className={` ${lastScrollY > 100 && "fixed top-0 left-0"}  z-50 w-full bg-white border-b border-b-slate-300 transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"
                 }`}
             aria-label="Main navigation"
         >
             <div className="theme_background">
                 <Marquee className="py-3">
-                    {items.map((text, i) => (
+                    {items.map((item, i) => (
                         <div
                             key={i}
-                            className="mx-8 whitespace-nowrap text-sm md:text-base lg:text-lg font-semibold text-white"
+                            className=" flex items-center gap-3 mx-8 whitespace-nowrap text-sm md:text-base lg:text-lg font-semibold text-white"
                         >
-                            {text}
+                            <span>
+                                {item?.icon}
+                            </span>
+
+                            <span>
+                                {item?.title}
+                            </span>
+                            |
+
+                            <span>
+                                {item?.description}
+                            </span>
+
                         </div>
                     ))}
                 </Marquee>
@@ -86,7 +105,7 @@ const NavBar = () => {
                         }
 
                         <button
-                            className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-2 rounded-full font-semibold"
+                            className=" button_color text-white px-6 py-2 rounded-full font-semibold"
                         >
                             এখনই কিনুন
                         </button>

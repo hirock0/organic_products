@@ -6,8 +6,8 @@ import Footer from '@/components/Footer/Footer';
 import Banner from '@/components/Banner/Banner';
 import Cta from '@/components/Cta/Cta';
 import Testimonials from '@/components/Testimonials/Testimonials';
+import FAQ from '@/components/FAQ/Faq';
 const OrganicLandingPage: React.FC = () => {
-
 
   return (
     <div className="font-bangla  bg-gradient-to-br from-emerald-50 via-white to-green-50 font-sans">
@@ -36,7 +36,8 @@ const OrganicLandingPage: React.FC = () => {
 
       {/* Testimonials Section with Swiper */}
       <Testimonials />
-
+      {/* FAQ section */}
+      <FAQ/>
       {/* CTA Section */}
       <Cta />
 
