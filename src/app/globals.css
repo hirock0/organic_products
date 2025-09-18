@@ -2,3 +2,9 @@
 .font-bangla {
   font-family: 'Hind Siliguri', sans-serif;
 }
+.theme_background{
+  @apply bg-[#43b51a];
+}
+.theme_text{
+  @apply text-[#43b51a];
+}
