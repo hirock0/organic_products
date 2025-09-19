@@ -7,7 +7,8 @@ import Testimonials from '@/components/(Home)/Testimonials/Testimonials';
 import CartProducts from '@/components/(Products)/CartProducts/CartProducts';
 import ProductCard from '@/components/(Products)/ProductCard/ProductCard';
 import Footer from '@/components/Footer/Footer';
-import NavBar from '@/components/NavBar/navBar';
+import NavBar from '@/components/NavBar/NavBar';
+
 import { products } from '@/data/products';
 const OrganicLandingPage: React.FC = () => {
 
