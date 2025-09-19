@@ -4,7 +4,7 @@ import { AppDispatch, RootState } from "@/utils/redux/store";
 import { useDispatch, useSelector } from "react-redux";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { addCartFlag } from "@/utils/redux/slices/slice";
 
 const CartProducts = () => {
