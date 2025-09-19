@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux"
 import { AppDispatch, RootState } from "@/utils/redux/store"
 import { addCart } from "@/utils/redux/slices/slice"
 import { toast } from "react-toastify"
-
 const AddCart: React.FC<any> = ({ product }: any) => {
   const dispatch = useDispatch<AppDispatch>()
   const { carts } = useSelector((state: RootState) => state)
@@ -26,5 +25,4 @@ const AddCart: React.FC<any> = ({ product }: any) => {
     </button>
   )
 }
-
 export default AddCart
