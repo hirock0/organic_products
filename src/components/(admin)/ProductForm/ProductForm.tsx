@@ -113,7 +113,6 @@ const ProductForm = () => {
             className="w-full border p-2 rounded"
           />
         </section>
-
         {/* Images */}
         <section>
           <h2 className="text-xl font-semibold mb-2">Images</h2>
