@@ -8,7 +8,6 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/utils/redux/store";
 import { addCartFlag } from "@/utils/redux/slices/slice";
-import CartProducts from "../(products)/cartProducts/cartProducts";
 const items = [
     {
         icon: <PhoneCall className=" w-6 h-6" />,
