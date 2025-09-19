@@ -77,7 +77,7 @@ const CartProducts = () => {
                                     ) || 0}
                                 </span>
                             </div>
-                            <button className="w-full mt-3 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+                            <button className="w-full mt-3 theme_background text-white py-2 rounded-lg hover:bg-green-700 transition">
                                 Checkout
                             </button>
                         </div>
