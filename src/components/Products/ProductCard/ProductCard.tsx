@@ -1,4 +1,4 @@
-import AddCart from "@/app/(ui)/(cart)/addCart"
+import AddCart from "@/app/ui/cart/addCart"
 import Image from "next/image"
 
 const ProductCard = ({ product }: any) => {

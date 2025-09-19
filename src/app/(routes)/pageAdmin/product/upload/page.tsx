@@ -1,4 +1,4 @@
-import ProductForm from '@/components/(Admin)/ProductForm/ProductForm'
+import ProductForm from '@/components/PageAdmin/ProductForm/ProductForm'
 import React from 'react'
 
 const page = () => {
