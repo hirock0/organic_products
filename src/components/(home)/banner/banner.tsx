@@ -3,8 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import { useSelector,useDispatch } from "react-redux";
-import { RootState,AppDispatch } from "@/utils/redux/store";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";

@@ -1,9 +1,5 @@
-
-
 "use client";
-
 import { CheckCircle } from "lucide-react";
-
 const benefits = [
   "প্রতিটি ভিটামিন শরীরের অক্সিজেন দূর করে।",
   "টিস্যু ক্যালসিয়াম গঠন করে।",

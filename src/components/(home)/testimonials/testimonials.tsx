@@ -1,9 +1,8 @@
 "use client";
-import React, { useState, useEffect } from 'react';
-import { Leaf, Star, Truck, Shield, Heart, ArrowRight, Menu, X, CheckCircle } from 'lucide-react';
+
+import { Star} from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { motion, useAnimation, Variants } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
