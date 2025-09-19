@@ -24,7 +24,7 @@ const faqItems: FAQItem[] = [
 ];
 
 
-export default function FAQ() {
+export default function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggle = (index: number) => {

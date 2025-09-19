@@ -1,7 +1,7 @@
 import Slogan1 from '@/components/(Home)/(Slogan)/Slogan1';
 import Banner from '@/components/(Home)/Banner/Banner';
 import Cta from '@/components/(Home)/Cta/Cta';
-import FAQ from '@/components/(Home)/Faq/Faq';
+import Faq from '@/components/(Home)/Faq/Faq';
 import Features from '@/components/(Home)/Features/Features';
 import Testimonials from '@/components/(Home)/Testimonials/Testimonials';
 import CartProducts from '@/components/(Products)/CartProducts/CartProducts';
@@ -41,7 +41,7 @@ const OrganicLandingPage: React.FC = () => {
       <Testimonials />
       <Slogan1 />
       {/* FAQ section */}
-      <FAQ />
+      <Faq />
       {/* CTA Section */}
       <Cta />
 
