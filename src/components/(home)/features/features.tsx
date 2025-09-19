@@ -1,7 +1,4 @@
 import { features } from '@/data/reatures'
-import { motion } from "framer-motion";
-
-
 const Features = () => {
     return (
 

@@ -19,7 +19,7 @@ const Testimonials = () => {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl font-extrabold text-gray-900">আমাদের গ্রাহকরা কী বলেন</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              হাজার হাজার সন্তুষ্ট গ্রাহকের সঙ্গে যোগ দিন যারা প্রিমিয়াম অর্গানিক পণ্যের জন্য PureHarvest-কে বিশ্বাস করেন
+              হাজার হাজার সন্তুষ্ট গ্রাহকের সঙ্গে যোগ দিন যারা প্রিমিয়াম অর্গানিক পণ্যের জন্য "ন্যাচার লাইফ" কে বিশ্বাস করেন
             </p>
           </div>
 

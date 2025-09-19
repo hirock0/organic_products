@@ -1,3 +1,4 @@
+import AddCart from "@/components/(ui)/(cart)/addCart"
 import Image from "next/image"
 
 const ProductCard = ({ product }: any) => {
@@ -15,11 +16,7 @@ const ProductCard = ({ product }: any) => {
                         <p className="text-gray-600 text-sm">{product.description}</p>
                         <div className="text-2xl font-bold text-[#43b51a]">{product.price}</div>
                     </div>
-                    <button
-                        className="w-full bg-gradient-to-r from-[#43b51a] to-[#3a861f] text-white py-3 rounded-full font-semibold"
-                    >
-                        Add to Cart
-                    </button>
+                   <AddCart product={product}/>
                 </div>
             </div>
         </div>

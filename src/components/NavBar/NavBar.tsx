@@ -3,8 +3,12 @@ import Marquee from "react-fast-marquee";
 import { navData } from '@/data/navData'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import { Menu, X, PhoneCall, MailPlus } from 'lucide-react';
+import { Menu, X, PhoneCall, MailPlus, ShoppingCart } from 'lucide-react';
 import { FaWhatsapp } from "react-icons/fa6";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "@/utils/redux/store";
+import { addCartFlag } from "@/utils/redux/slices/slice";
+import CartProducts from "../(products)/cartProducts/cartProducts";
 const items = [
     {
         icon: <PhoneCall className=" w-6 h-6" />,
@@ -23,9 +27,18 @@ const items = [
     }
 ];
 const NavBar = () => {
+    const dispatch = useDispatch<AppDispatch>()
+    const { carts, cartFlag } = useSelector((state: RootState) => state)
+
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const [showNavbar, setShowNavbar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+
+
+    const cartHandler = (e:any) => {
+        e.stopPropagation()
+        dispatch(addCartFlag(!cartFlag))
+    }
 
     useEffect(() => {
         const controlNavbar = () => {
@@ -46,7 +59,7 @@ const NavBar = () => {
 
     return (
         <nav
-            className={` ${lastScrollY > 100 && "fixed top-0 left-0"}  z-50 w-full bg-white border-b border-b-slate-300 transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"
+            className={` ${lastScrollY > 100 && "fixed top-0 left-0 z-50"}   w-full bg-white border-b border-b-slate-300 transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"
                 }`}
             aria-label="Main navigation"
         >
@@ -105,9 +118,13 @@ const NavBar = () => {
                         }
 
                         <button
-                            className=" button_color text-white px-6 py-2 rounded-full font-semibold"
+                            className=" relative"
+                            onClick={(e) => { cartHandler(e) }}
                         >
-                            এখনই কিনুন
+                            <ShoppingCart className="" />
+                            <span className=" absolute -top-3 bg-red-500 w-5 h-5 text-sm rounded-full text-white">
+                                {carts?.length}
+                            </span>
                         </button>
                     </div>
 
@@ -140,14 +157,20 @@ const NavBar = () => {
 
 
                         <button
-
-                            className="w-full  bg-gradient-to-r from-[#43b51a] to-[#3a861f] text-white px-6 py-3 rounded-full font-semibold"
+                            className=" relative"
+                            onClick={(e) => (cartHandler(e))}
                         >
-                            এখনই কিনুন
+                            <ShoppingCart className="" />
+                            <span className=" absolute -top-3 bg-red-500 w-5 h-5 text-sm rounded-full text-white">
+                                {carts?.length}
+                            </span>
                         </button>
                     </div>
                 </div>
             )}
+
+
+
         </nav>
     )
 }

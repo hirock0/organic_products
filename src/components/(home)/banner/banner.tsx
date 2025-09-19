@@ -3,12 +3,14 @@ import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-
+import { useSelector,useDispatch } from "react-redux";
+import { RootState,AppDispatch } from "@/utils/redux/store";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 const Banner = () => {
+ 
     const slides = [
         "https://res.cloudinary.com/dqpyp8ii2/image/upload/v1758037824/Facebook_Cover_copy_mieysi.jpg",
         "https://res.cloudinary.com/dqpyp8ii2/image/upload/v1758037824/Facebook_Cover_copy_mieysi.jpg",
@@ -19,8 +21,7 @@ const Banner = () => {
         <section className="w-full">
             <Swiper
                 autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
+                    delay: 3000
                 }}
                 loop={true}
                 modules={[Autoplay, Pagination]}

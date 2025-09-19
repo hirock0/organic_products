@@ -1,12 +1,14 @@
+import Slogan1 from '@/components/(home)/(slogan)/slogan1';
+import Banner from '@/components/(home)/banner/banner';
+import Cta from '@/components/(home)/cta/cta';
+import FAQ from '@/components/(home)/faq/faq';
+import Features from '@/components/(home)/features/features';
+import Testimonials from '@/components/(home)/testimonials/testimonials';
+import CartProducts from '@/components/(products)/cartProducts/cartProducts';
+import ProductCard from '@/components/(products)/productCard/productCard';
+import Footer from '@/components/footer/footer';
+import NavBar from '@/components/navBar/navBar';
 import { products } from '@/data/products';
-import NavBar from '@/components/NavBar/NavBar';
-import Features from '@/components/Features/Features';
-import ProductCard from '@/components/ProductCard/ProductCard';
-import Footer from '@/components/Footer/Footer';
-import Banner from '@/components/Banner/Banner';
-import Cta from '@/components/Cta/Cta';
-import Testimonials from '@/components/Testimonials/Testimonials';
-import FAQ from '@/components/FAQ/Faq';
 const OrganicLandingPage: React.FC = () => {
 
   return (
@@ -14,6 +16,7 @@ const OrganicLandingPage: React.FC = () => {
 
       <NavBar />
       <Banner />
+      <CartProducts />
       <Features />
 
 
@@ -36,8 +39,9 @@ const OrganicLandingPage: React.FC = () => {
 
       {/* Testimonials Section with Swiper */}
       <Testimonials />
+      <Slogan1 />
       {/* FAQ section */}
-      <FAQ/>
+      <FAQ />
       {/* CTA Section */}
       <Cta />
 
