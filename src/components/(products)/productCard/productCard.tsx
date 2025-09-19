@@ -5,7 +5,7 @@ const ProductCard = ({ product }: any) => {
     return (
         <div>
             <div
-                className="bg-white w-full overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                className="bg-white w-full overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-102"
             >
                 <div className="p-8 text-center space-y-4">
                     <div className=" h-72 max-sm:h-80 ">

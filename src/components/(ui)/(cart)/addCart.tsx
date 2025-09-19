@@ -20,7 +20,7 @@ const AddCart: React.FC<any> = ({ product }: any) => {
   return (
     <button
       onClick={cartHandler}
-      className="w-full bg-gradient-to-r from-[#43b51a] to-[#3a861f] text-white py-3 rounded-full font-semibold"
+      className="w-full button_color text-white py-3 rounded-full font-semibold"
     >
       Add to Cart
     </button>
