@@ -20,7 +20,7 @@ const whyUs = [
 
 const Slogan1 = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-10">
+    <section className="max-w-7xl mx-auto px-5 my-20 max-sm:my-10">
       {/* Product Title */}
       <div className="theme_background text-white text-center py-4 rounded-t-2xl">
         <h2 className="text-2xl font-bold">

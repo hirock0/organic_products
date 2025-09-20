@@ -11,19 +11,19 @@ import { addCartFlag } from "@/utils/redux/slices/slice";
 const items = [
     {
         icon: <PhoneCall className=" w-6 h-6" />,
-        title: "+8801700554293",
+        title: "+8801343956636",
         description: "অর্ডার করুন খাঁটি অর্গানিক পণ্য — এখনই কল করুন"
     },
     {
         icon: <FaWhatsapp className=" w-6 h-6" />,
-        title: "+8801700554293",
+        title: "+8801343956636",
         description: "স্বাস্থ্যকর জীবনের জন্য আজই যোগাযোগ করুন"
     },
-    {
-        icon: <MailPlus className=" w-6 h-6" />,
-        title: "hirockdutta0@gmail.com",
-        description: "রাসায়নিকমুক্ত অর্গানিক খাবার পেতে আমাদের সাথে থাকুন"
-    }
+    // {
+    //     icon: <MailPlus className=" w-6 h-6" />,
+    //     title: "hirockdutta0@gmail.com",
+    //     description: "রাসায়নিকমুক্ত অর্গানিক খাবার পেতে আমাদের সাথে থাকুন"
+    // }
 ];
 const NavBar = () => {
     const dispatch = useDispatch<AppDispatch>()
