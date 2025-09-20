@@ -1,12 +1,12 @@
 import { X, CheckCircle } from 'lucide-react';
 const Cta = () => {
   return (
-    <div>
+    <div className=' mt-20'>
       <section
 
         className="py-24 theme_background"
       >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
           <h2 className="text-4xl lg:text-5xl font-extrabold text-white">
             আজই শুরু করুন আপনার অর্গানিক যাত্রা
           </h2>

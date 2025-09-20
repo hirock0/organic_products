@@ -34,7 +34,7 @@ const NavBar = () => {
     const [lastScrollY, setLastScrollY] = useState(0);
 
 
-    const cartHandler = (e:any) => {
+    const cartHandler = (e: any) => {
         e.stopPropagation()
         dispatch(addCartFlag(!cartFlag))
     }
@@ -98,7 +98,7 @@ const NavBar = () => {
                             <Image src={"https://res.cloudinary.com/dqpyp8ii2/image/upload/v1758035793/Nature_Life_Logo-01-01_cl15ho.png"} alt='logo' width={500} height={500} />
 
                         </div>
-                        <div className="">
+                        <div className=" mt-2">
                             <h1 className="text-2xl font-bold theme_text">
                                 ন্যাচার লাইফ
                             </h1>

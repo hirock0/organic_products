@@ -32,7 +32,7 @@ export default function Faq() {
   };
 
   return (
-    <section className="max-w-3xl mx-auto p-6">
+    <section className="max-w-3xl mx-auto ">
       <h2 className="text-2xl font-bold mb-6 text-green-800">প্রশ্নাবলী (FAQ)</h2>
       <div className="space-y-3">
         {faqItems.map((item, index) => (
