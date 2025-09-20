@@ -2,6 +2,7 @@
 
 import { useForm, useFieldArray } from "react-hook-form";
 import { useState } from "react";
+import axios from "axios";
 
 type ProductFormValues = {
   name: string;
@@ -41,6 +42,7 @@ const ProductForm = () => {
       },
     },
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Dynamic fields
   const { fields: imageFields, append: appendImage } = useFieldArray({
@@ -64,13 +66,23 @@ const ProductForm = () => {
     name: "seo.metaKeywords",
   });
 
-  const [submittedData, setSubmittedData] = useState<ProductFormValues | null>(
-    null
-  );
 
-  const onSubmit = (data: ProductFormValues) => {
-    setSubmittedData(data);
-    console.log("✅ Submitted Data:", data);
+
+  const onSubmit = async (data: ProductFormValues) => {
+    setIsSubmitting(true);
+    try {
+      const response = await axios.post("/api/products", data)
+      if (response?.data?.success) {
+        setIsSubmitting(false);
+      }
+
+    } catch (error: any) {
+      throw new Error(error?.message)
+    } finally {
+      setIsSubmitting(false);
+    }
+
+
   };
 
   return (
@@ -265,18 +277,35 @@ const ProductForm = () => {
         {/* Submit */}
         <button
           type="submit"
-          className="bg-blue-600 text-white px-6 py-2 rounded"
+          className="bg-blue-600 text-white px-6 py-2 rounded flex items-center justify-center gap-2 disabled:opacity-70"
+          disabled={isSubmitting}
         >
-          Submit
+          {isSubmitting && (
+            <svg
+              className="animate-spin h-5 w-5 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              ></circle>
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+              ></path>
+            </svg>
+          )}
+          {isSubmitting ? "Submitting..." : "Submit"}
         </button>
       </form>
 
-      {/* Preview Submitted Data */}
-      {submittedData && (
-        <pre className="bg-gray-100 mt-6 p-4 rounded text-sm overflow-x-auto">
-          {JSON.stringify(submittedData, null, 2)}
-        </pre>
-      )}
     </div>
   );
 };
