@@ -11,12 +11,12 @@ import { addCartFlag } from "@/utils/redux/slices/slice";
 const items = [
     {
         icon: <PhoneCall className=" w-6 h-6" />,
-        title: "+8801343956636",
+        title: "+8801343-956636",
         description: "অর্ডার করুন খাঁটি অর্গানিক পণ্য — এখনই কল করুন"
     },
     {
         icon: <FaWhatsapp className=" w-6 h-6" />,
-        title: "+8801343956636",
+        title: "+8801343-956636",
         description: "স্বাস্থ্যকর জীবনের জন্য আজই যোগাযোগ করুন"
     },
     // {

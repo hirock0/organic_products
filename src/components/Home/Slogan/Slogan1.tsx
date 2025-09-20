@@ -70,7 +70,7 @@ const Slogan1 = () => {
       {/* Contact Section */}
       <div className="theme_background text-white text-center py-6 mt-10 rounded-2xl">
         <h3 className="text-xl font-bold">যে কোন প্রয়োজনে যোগাযোগ করুন</h3>
-        <p className="text-2xl font-extrabold mt-2">+8801343956636</p>
+        <p className="text-2xl font-extrabold mt-2">+8801343-956636</p>
       </div>
     </section>
   );
