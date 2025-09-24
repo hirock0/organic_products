@@ -8,6 +8,7 @@ import ProductCard from '@/components/Products/ProductCard/ProductCard';
 import Footer from '@/components/Footer/Footer';
 import NavBar from '@/components/NavBar/NavBar';
 import { products } from '@/data/products';
+import OrderButton from './ui/orderButton/orderButton';
 const OrganicLandingPage: React.FC = () => {
 
   return (
@@ -43,6 +44,9 @@ const OrganicLandingPage: React.FC = () => {
       <Faq />
       {/* CTA Section */}
       <Cta />
+
+
+      {/* <OrderButton/> */}
 
       {/* Footer */}
       <Footer />

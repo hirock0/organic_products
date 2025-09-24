@@ -19,11 +19,11 @@ const items = [
         title: "+8801343-956636",
         description: "স্বাস্থ্যকর জীবনের জন্য আজই যোগাযোগ করুন"
     },
-    // {
-    //     icon: <MailPlus className=" w-6 h-6" />,
-    //     title: "hirockdutta0@gmail.com",
-    //     description: "রাসায়নিকমুক্ত অর্গানিক খাবার পেতে আমাদের সাথে থাকুন"
-    // }
+    {
+        icon: <MailPlus className=" w-6 h-6" />,
+        title: "naturelifebangladesh@gmail.com",
+        description: "রাসায়নিকমুক্ত অর্গানিক খাবার পেতে আমাদের সাথে থাকুন"
+    }
 ];
 const NavBar = () => {
     const dispatch = useDispatch<AppDispatch>()

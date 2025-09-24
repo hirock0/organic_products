@@ -11,9 +11,9 @@ import "swiper/css/pagination";
 const Banner = () => {
  
     const slides = [
-        "https://res.cloudinary.com/dqpyp8ii2/image/upload/v1758037824/Facebook_Cover_copy_mieysi.jpg",
-        "https://res.cloudinary.com/dqpyp8ii2/image/upload/v1758037824/Facebook_Cover_copy_mieysi.jpg",
-        "https://res.cloudinary.com/dqpyp8ii2/image/upload/v1758037824/Facebook_Cover_copy_mieysi.jpg",
+        "https://res.cloudinary.com/dqpyp8ii2/image/upload/v1758757728/Facebook_Cover_copyh2_vh31qv.jpg",
+        "https://res.cloudinary.com/dqpyp8ii2/image/upload/v1758757717/Facebook_Cover_03_copyh3_jmivbs.jpg",
+        "https://res.cloudinary.com/dqpyp8ii2/image/upload/v1758757715/Facebook_Cover_02_copy-h1_lrlyps.jpg",
     ];
 
     return (

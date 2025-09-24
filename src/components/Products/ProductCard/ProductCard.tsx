@@ -9,14 +9,17 @@ const ProductCard = ({ product }: any) => {
             >
                 <div className="p-8 text-center space-y-4">
                     <div className=" h-72 max-sm:h-80 ">
-                        <Image priority src={product?.image} alt={product?.name} width={500} height={500} className=" w-full h-full object-cover"/>
+                        <Image priority src={product?.image} alt={product?.name} width={500} height={500} className=" w-full h-full object-cover" />
                     </div>
                     <div className="space-y-3">
                         <h3 className="text-2xl font-semibold text-gray-900">{product.name}</h3>
                         <p className="text-gray-600 text-sm">{product.description}</p>
-                        <div className="text-2xl font-bold text-[#43b51a]">{product.price}</div>
+                        <div className="">
+                            <div className="text-2xl font-bold text-[#43b51a]">৳ {product.price}</div>
+                            <div className="font-bold text-red-600 line-through">৳ {product.oldPrice}</div>
+                        </div>
                     </div>
-                   <AddCart product={product}/>
+                    <AddCart product={product} />
                 </div>
             </div>
         </div>
