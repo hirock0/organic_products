@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { testimonials } from '@/data/testimonials';
+import UnderLine from '@/components/Animations/UnderLine';
 
 const Testimonials = () => {
   return (
@@ -16,8 +17,10 @@ const Testimonials = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl font-extrabold text-gray-900">আমাদের গ্রাহকরা কী বলেন</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+
+              <UnderLine text={"আমাদের গ্রাহকরা কী বলেন"} className={"text-4xl font-extrabold text-gray-900"}/>
+
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mt-10">
               হাজার হাজার সন্তুষ্ট গ্রাহকের সঙ্গে যোগ দিন যারা প্রিমিয়াম অর্গানিক পণ্যের জন্য "ন্যাচার লাইফ" কে বিশ্বাস করেন
             </p>
           </div>

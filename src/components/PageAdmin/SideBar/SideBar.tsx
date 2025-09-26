@@ -15,8 +15,8 @@ const SideBar = () => {
             icon: <PhoneCall />
         },
         {
-            title: "Analysis",
-            href: "/",
+            title: "Products",
+            href: "/dashboard/owner/product/upload",
             icon: <PhoneCall />
         },
     ]

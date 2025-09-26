@@ -14,3 +14,7 @@ button{
 .button_color{
   @apply  bg-[#43b51a] hover:bg-[#2e9d05];
 }
+
+.custom-lottie path {
+  stroke: #e18c15 !important;
+}
