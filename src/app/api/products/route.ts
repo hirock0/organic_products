@@ -8,14 +8,12 @@ export async function POST(request: Request) {
         const db = client.db("organicproducts");
         const products =  db.collection("products")
         const addedProduct = await products.insertOne(reqBody)
-
         return Response.json({ message: "Upload successfully", success: true, reqBody })
     } catch (error: any) {
         return Response.json({ message: error?.message, success: false })
     }
 
 }
-
 export async function GET() {
     try {
         const client = await clientPromise
