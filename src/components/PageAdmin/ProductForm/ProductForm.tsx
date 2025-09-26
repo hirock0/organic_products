@@ -98,7 +98,7 @@ const ProductForm = () => {
         setProducts(updatedProducts);
         setEditIndex(null);
       } else {
-        const res = await axios.post("http://localhost:3000/api/products", data)
+        const res = await axios.post("/pages/api/products", data)
         if (res?.data?.success) {
           alert("Producted added")
           setProducts([...products, data]);
